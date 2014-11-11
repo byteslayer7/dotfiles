@@ -21,7 +21,7 @@ set autochdir
 syntax on
 
 " Set startup colorscheme.
-colorscheme jelleybeans
+colorscheme jellybeans
 
 " Don't let text wrap when it hits the edge of the screen.
 set nowrap
