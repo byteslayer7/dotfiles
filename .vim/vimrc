@@ -21,7 +21,7 @@ set autochdir
 syntax on
 
 " Set startup colorscheme.
-colorscheme jellybeans
+colorscheme jelleybeans
 
 " Don't let text wrap when it hits the edge of the screen.
 set nowrap
@@ -369,3 +369,8 @@ noremap <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 "*******************************************************
+" Alex Webb changes
+
+" This eliminates the noticable delay before 'O' opens up a line above
+set timeout timeoutlen=1000 ttimeoutlen=100
+
