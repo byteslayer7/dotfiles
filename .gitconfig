@@ -1,6 +1,6 @@
 [user]
-	email = alex.webb@vivintsolar.com
-	name = Alex Webb 
+	email = byteslayer7@gmail.com
+	name = Alex Webb
 [alias]
   st = status -sb
   ci = commit
@@ -13,23 +13,13 @@
   purr = pull --rebase
 [push]
 	default = simple
-[diff]
-  tool = bc4
-[difftool]
-  prompt = false
-[difftool "bc4"]
-  trustExitCode = true
-  cmd = `/usr/local/bin/bcomp $LOCAL $REMOTE`
-[merge]
-  tool = bc4
-[mergetool]
-  prompt = false
-[mergetool "bc4"]
-  trustExitCode = true
-  cmd = `/usr/local/bin/bcomp $LOCAL $REMOTE $BASE $MERGED`
 [core]
 	editor = /usr/local/bin/vim
-	excludesfile = /Users/chev/.gitignore_global
+	excludesfile = /Users/alex/.gitignore_global
+[mergetool]
+	keepBackup = false
+[merge]
+	tool = kdiff3
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 

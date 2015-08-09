@@ -374,3 +374,12 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " This eliminates the noticable delay before 'O' opens up a line above
 set timeout timeoutlen=1000 ttimeoutlen=100
 
+set noswapfile
+
+set ignorecase
+set smartcase
+set incsearch
+
+" Vim SLIME
+let g:slime_target = "tmux"
+"let g:slime_default_config {"socket_name": "default", "target_pane": "1", "target_window": "0"}
