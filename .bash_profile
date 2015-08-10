@@ -1,5 +1,7 @@
+<<<<<<< HEAD
 #!/bin/bash
 alias ll='ls -AlFG'
+fi
 alias vnpm='npm --registry http://192.168.211.100:5984/registry/_design/app/_rewrite'
 alias ssh-alex="ssh alex-mbp.local"
 alias nh="node --harmony"
@@ -45,3 +47,8 @@ nvm use stable
 export NODE_ENV="localdev"
 
 export HISTCONTROL=ignoreboth:erasedups
+=======
+if [ -f ~/.bashrc ]; then
+  source ~/.bashrc
+fi
+>>>>>>> a57bb57cc632fa83f76058c77af5c612d1f2bebe

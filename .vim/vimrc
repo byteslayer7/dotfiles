@@ -26,6 +26,10 @@ colorscheme jelleybeans
 " Don't let text wrap when it hits the edge of the screen.
 set nowrap
 
+" Don't have vim store backup or swap files.
+set nobackup
+set noswapfile
+
 " Briefly jump cursor to matching brace when typing completion brace.
 set showmatch
 
@@ -82,6 +86,9 @@ set expandtab
 
 " Show statusline always.
 set laststatus=2
+
+" No need to add 'g' to the end of substitute patterns to replace all occurances.
+set gdefault
 
 "*******************************************************
 
